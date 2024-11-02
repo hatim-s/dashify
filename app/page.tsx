@@ -1,9 +1,12 @@
-import { Button } from "@/ui/components/button";
+import Canvas from "@/components/Canvas";
+import Header from "@/components/Header";
+import Stack from "@/ui/components/stack";
 
-export default async function Index() {
+export default async function HomePage() {
   return (
-    <main className="flex-1 flex flex-col gap-6 px-4">
-      <Button variant="default">hello</Button>
-    </main>
+    <Stack className="bg-secondary w-full h-full" direction="column">
+      <Header />
+      <Canvas />
+    </Stack>
   );
 }
