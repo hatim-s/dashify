@@ -7,7 +7,7 @@ export default function GridRenderer() {
   const { layout } = useCanvasContext();
 
   return (
-    <Grid rows={6} cols={6} className="gap-2">
+    <Grid rows={6} cols={8} className="gap-2">
       {layout.cells.map((cell, index) => (
         <GridItem
           position={{
