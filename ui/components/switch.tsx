@@ -1,1 +1,1 @@
-export * from "@/ui/base/switch";
+export { Switch } from "@/ui/base/switch";

@@ -1,1 +1,1 @@
-export * from "@/ui/base/skeleton";
+export { Skeleton } from "@/ui/base/skeleton";

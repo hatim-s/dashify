@@ -1,1 +1,1 @@
-export * from "@/ui/base/label";
+export { Label } from "@/ui/base/label";

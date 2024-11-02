@@ -1,1 +1,1 @@
-export * from "@/ui/base/tabs";
+export { Tabs, TabsList, TabsTrigger, TabsContent } from "@/ui/base/tabs";

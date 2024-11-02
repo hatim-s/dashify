@@ -1,1 +1,1 @@
-export * from "@/ui/base/sonner";
+export { Toaster as Sonner } from "@/ui/base/sonner";

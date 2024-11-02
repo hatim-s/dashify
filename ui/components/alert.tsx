@@ -1,1 +1,1 @@
-export * from "@/ui/base/alert";
+export { Alert, AlertTitle, AlertDescription } from "@/ui/base/alert";

@@ -1,1 +1,1 @@
-export * from "@/ui/base/progress";
+export { Progress } from "@/ui/base/progress";

@@ -1,1 +1,6 @@
-export * from "@/ui/base/popover";
+export {
+  Popover,
+  PopoverTrigger,
+  PopoverContent,
+  PopoverAnchor,
+} from "@/ui/base/popover";

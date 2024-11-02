@@ -1,1 +1,1 @@
-export * from "@/ui/base/avatar";
+export { Avatar, AvatarImage, AvatarFallback } from "@/ui/base/avatar";

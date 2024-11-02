@@ -1,1 +1,1 @@
-export * from "@/ui/base/badge";
+export { Badge, badgeVariants, type BadgeProps } from "@/ui/base/badge";

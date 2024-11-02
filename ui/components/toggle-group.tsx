@@ -1,1 +1,1 @@
-export * from "@/ui/base/toggle-group";
+export { ToggleGroup, ToggleGroupItem } from "@/ui/base/toggle-group";

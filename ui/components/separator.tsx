@@ -1,1 +1,1 @@
-export * from "@/ui/base/separator";
+export { Separator } from "@/ui/base/separator";
