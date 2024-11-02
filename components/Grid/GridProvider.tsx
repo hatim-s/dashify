@@ -21,10 +21,10 @@ function useGridContext(): GridContextType {
 }
 
 function GridProvider(props: PropsWithChildren<GridContextType>) {
-  const { rows, columns } = props;
+  const { rows, columns, children } = props;
   return (
     <GridContext.Provider value={{ rows, columns }}>
-      {props.children}
+      {children}
     </GridContext.Provider>
   );
 }

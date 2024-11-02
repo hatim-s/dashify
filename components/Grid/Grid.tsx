@@ -3,6 +3,7 @@
 import { clsx } from "clsx";
 import { PropsWithChildren } from "react";
 import { GridProvider } from "./GridProvider";
+import Box from "@/ui/components/box";
 
 type GridProps = {
   rows: 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12;
@@ -13,7 +14,7 @@ type GridProps = {
 export default function Grid(props: PropsWithChildren<GridProps>) {
   return (
     <GridProvider rows={props.rows} columns={props.cols}>
-      <div
+      <Box
         className={clsx("w-full h-full", props.className)}
         style={{
           display: "grid",
@@ -22,7 +23,7 @@ export default function Grid(props: PropsWithChildren<GridProps>) {
         }}
       >
         {props.children}
-      </div>
+      </Box>
     </GridProvider>
   );
 }
