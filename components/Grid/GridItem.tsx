@@ -18,7 +18,7 @@ type GridItemProps = {
 } & HTMLProps<HTMLDivElement>;
 
 export default function GridItem(props: PropsWithChildren<GridItemProps>) {
-  const { className, ...rest } = props;
+  const { className, position: _position, ...rest } = props;
 
   const context = useGridContext();
 
@@ -27,7 +27,7 @@ export default function GridItem(props: PropsWithChildren<GridItemProps>) {
   }
 
   const { rows, columns } = context;
-  const position = getAdaptedPosition(props.position, rows, columns);
+  const position = getAdaptedPosition(_position, rows, columns);
 
   return (
     <Box

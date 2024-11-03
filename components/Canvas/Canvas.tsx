@@ -16,7 +16,7 @@ const CONTEXT: CanvasContextType = {
 };
 export default function Canvas() {
   return (
-    <Box className="size-11/12 bg-white rounded-lg self-center justify-self-center my-auto overflow-hidden">
+    <Box className="size-11/12 bg-white rounded-lg self-center justify-self-center my-auto overflow-hidden p-4">
       <CanvasProvider context={CONTEXT}>
         <GridRenderer />
       </CanvasProvider>

@@ -2,6 +2,8 @@
 
 import { Grid, GridItem } from "../Grid";
 import { useCanvasContext } from "./CanvasProvider";
+import Chart from "./Chart";
+import ChartLong from "./ChartLong";
 
 export default function GridRenderer() {
   const { layout } = useCanvasContext();
@@ -16,10 +18,10 @@ export default function GridRenderer() {
             gridColumnStart: cell.colStart,
             gridColumnEnd: cell.colEnd,
           }}
-          className="bg-red-300"
+          className="bg-violet-300 h-full w-full overflow-hidden rounded-lg"
           key={index}
         >
-          {`cell_${index}`}
+          <Chart />
         </GridItem>
       ))}
     </Grid>
