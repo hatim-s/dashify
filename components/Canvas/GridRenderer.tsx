@@ -18,7 +18,7 @@ export default function GridRenderer() {
             gridColumnStart: cell.colStart,
             gridColumnEnd: cell.colEnd,
           }}
-          className="bg-violet-300 h-full w-full overflow-hidden"
+          className="bg-violet-300 h-full w-full overflow-hidden rounded-lg"
           key={index}
         >
           <Chart />
